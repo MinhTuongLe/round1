@@ -1,25 +1,25 @@
-body {
+* {
   font-family: 'Be Vietnam Pro';
 }
 
-.__box {
+.box {
   padding: 100px 0 75px 0;
 }
 
-.__box1,
-.__box1-circle {
+.box,
+.box-circle {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
-.__text-title {
+.text-title {
   max-width: 500px;
   height: max-content;
   margin: auto 0;
 }
 
-.__title1 {
+.title_1 {
   font-size: clamp(32px, 4.3vw, 48px);
   line-height: clamp(44px, 5.1vw, 56px);
   font-weight: 700;
@@ -27,11 +27,11 @@ body {
   color: #353455;
 }
 
-.circle2 {
+.circle {
   width: 85%;
 }
 
-.__box1-circle .__box-inner {
+.box-circle .box-inner {
   position: relative;
 }
 
@@ -52,32 +52,31 @@ body {
   right: 13px;
 }
 
-.__box-inner2 {
+.box-inner_2 {
   margin-top: 121px;
-
 }
 
-.text-circle1 {
+.text-circle_1 {
   top: 25%;
   left: 23%;
 }
 
-.text-circle2 {
+.text-circle_2 {
   top: 18%;
   left: 26%;
 }
 
-.text-circle3 {
+.text-circle_3 {
   top: 25%;
   left: 33%;
 }
 
-.text-circle4 {
+.text-circle_4 {
   top: 25%;
   left: 35%;
 }
 
-.text-circle5 {
+.text-circle_5 {
   top: 25%;
   left: 35%;
 }
@@ -87,48 +86,48 @@ body {
   align-items: center;
 }
 
-.__dec-title2 {
+.dec-title_2 {
   margin-top: 24px;
   padding-left: 20px;
 }
 
-.__dec-title2 li::marker {
+.dec-title_2 li::marker {
   color: #EB4969;
   width: 7px;
 }
 
-.__dec-title2 li {
+.dec-title_2 li {
   font-size: 16px;
   color: #353455;
   line-height: 26px;
   margin-bottom: 20px;
 }
 
-.__title2 {
+.title_2 {
   font-size: 24px;
   line-height: 34px;
   color: #004EAB;
   font-weight: 700;
 }
 
-.__box2-text {
+.box2-text {
   display: flex;
   justify-content: flex-end;
 }
 
-.__box-inner3 {
+.box-inner_3 {
   position: relative;
   margin-top: 107px;
 }
 
-.__box-inner4 {
+.box-inner_4 {
   position: relative;
   margin-top: -71px;
   display: flex;
   justify-content: center;
 }
 
-.__mt-112 {
+.mt-112 {
   margin-top: -112px;
 }
 
@@ -137,132 +136,139 @@ body {
 }
 
 @media screen and (max-width: 1450px) {
-  .text-circle1 {
+  .text-circle_1 {
     top: 20%;
     left: 20%;
   }
 
-  .text-circle2 {
+  .text-circle_2 {
     top: 15%;
     left: 24%;
   }
 
-  .text-circle3 {
+  .text-circle_3 {
     top: 19%;
     left: 33%;
   }
 
 
 
-  .text-circle5 {
+  .text-circle_5 {
     top: 19%;
     left: 30%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .text-circle1 {
+  .text-circle_1 {
     top: 17%;
     left: 16%;
   }
 
-  .text-circle2 {
+  .text-circle_2 {
     top: 12%;
     left: 22%;
   }
 
-  .text-circle3 {
+  .text-circle_3 {
     top: 16%;
     left: 33%;
   }
 
 
-  .text-circle4 {
+  .text-circle_4 {
     top: 23%;
     left: 35%;
   }
 
-  .text-circle5 {
+  .text-circle_5 {
     top: 16%;
     left: 30%;
   }
 }
 
 @media screen and (max-width:1023px) {
-  .__text-title2 {
+  .text-title_2 {
     margin-top: 24%;
   }
 }
 
 @media screen and (max-width:767px) {
-  .__container {
+  .container {
     padding: 0 8px !important;
   }
 
-  .__box1 {
+  .box {
     flex-direction: column;
   }
 
-  .__mt-112 {
+  .mt-112 {
     margin-top: 0;
   }
 
-  .__box1 .col-12 {
+  .box .col-12 {
     max-width: unset;
     width: 100%;
     flex: 0 0 auto;
   }
 
-  .__text-title {
+  .text-title {
 
     max-width: unset;
     width: 100%;
   }
 
-  .__text-title2 {
-    margin-top: 0;
-
+  .title_1,
+  .title_2 {
+    text-align: center;
   }
 
-  .__box-inner2 {
+  .text-title_2 {
+    margin: 0 5%;
+  }
+
+  .box-inner_2 {
     margin: 7.5% 0;
     display: flex;
     justify-content: flex-end;
   }
 
-  .__box-inner3 {
+  .box-inner_3 {
     margin: 7.5% 0;
     display: flex;
     justify-content: flex-start;
   }
 
-  .__box-inner4 {
+  .box-inner_4 {
     margin: 0;
 
   }
 
-  .text-circle2 {
+
+  .text-circle_1 {
+    top: 15%;
+    left: 16%;
+  }
+
+  .text-circle_2 {
     top: 10%;
     left: 38%;
   }
 
-  .text-circle3 {
+  .text-circle_3 {
     top: 10%;
     left: 30%;
   }
 
-  .text-circle5 {
-    top: 9%;
-    left: 26%;
-  }
-
-  .text-circle4 {
+  .text-circle_4 {
     top: 15%;
     left: 33%;
   }
 
-  .text-circle1 {
-    top: 15%;
-    left: 16%;
+  .text-circle_5 {
+    top: 9%;
+    left: 26%;
   }
+
+
 }
