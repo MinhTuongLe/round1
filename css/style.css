@@ -1,4 +1,4 @@
-* {
+body {
   font-family: 'Be Vietnam Pro';
 }
 
@@ -6,31 +6,33 @@
   padding: 100px 0 75px 0;
 }
 
-.box,
-.box-circle {
+.box1,
+.box1-circle {
   display: flex;
   justify-content: center;
   flex-direction: row;
 }
 
 .text-title {
-  position: relative;
   max-width: 500px;
   height: max-content;
   margin: auto 0;
 }
 
-.title_1 {
-  position: relative;
+.title1 {
   font-size: clamp(32px, 4.3vw, 48px);
   line-height: clamp(44px, 5.1vw, 56px);
   font-weight: 700;
-
   color: #353455;
+  position: relative;
 }
 
-.title_1::before,
-.title_2::before {
+.title2 {
+  position: relative;
+}
+
+.title1::before,
+.title2::before {
   content: '';
   position: absolute;
   top: 0;
@@ -41,19 +43,18 @@
   animation: showRight 1s ease forwards;
 }
 
-.title_1::before {
+.title1::before {
   animation-delay: .2s;
 }
 
-.title_2::before {
+.title2::before {
   animation-delay: .4s;
 }
-
-.circle {
+.circle2 {
   width: 85%;
 }
 
-.box-circle .box-inner {
+.box1-circle .box-inner {
   position: relative;
 }
 
@@ -74,34 +75,32 @@
   right: 13px;
 }
 
-.box-inner_2 {
+.box-inner2 {
   margin-top: 121px;
-  animation: moveUpDown 1s infinite alternate;
+
 }
 
-
-
-.text-circle_1 {
+.text-circle1 {
   top: 25%;
   left: 23%;
 }
 
-.text-circle_2 {
+.text-circle2 {
   top: 18%;
   left: 26%;
 }
 
-.text-circle_3 {
+.text-circle3 {
   top: 25%;
   left: 33%;
 }
 
-.text-circle_4 {
+.text-circle4 {
   top: 25%;
   left: 35%;
 }
 
-.text-circle_5 {
+.text-circle5 {
   top: 25%;
   left: 35%;
 }
@@ -111,30 +110,20 @@
   align-items: center;
 }
 
-.desc-title_2 {
+.desc-title2 {
   position: relative;
   margin-top: 24px;
   padding-left: 20px;
 }
 
-.desc-title_2 li::marker {
+.desc-title2 li::marker {
   color: #EB4969;
   width: 7px;
   opacity: 0;
-  animation: fade-in 1s ease-in-out forwards;
+  animation: fade-in 1.4s ease-in-out forwards;
 }
 
-@keyframes fade-in {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-
-.desc-title_2 li {
+.desc-title2 li {
   font-size: 16px;
   color: #353455;
   line-height: 26px;
@@ -142,7 +131,7 @@
   position: relative;
 }
 
-.desc-title_2 li::before {
+.desc-title2 li::before {
   content: "";
   position: absolute;
   top: 0;
@@ -153,45 +142,23 @@
   animation: showRight 1s ease forwards;
 }
 
-.desc-title_2 li:nth-child(1)::before {
+.desc-title2 li:nth-child(1)::before {
   animation-delay: 0.6s;
 }
 
-.desc-title_2 li:nth-child(2)::before {
+.desc-title2 li:nth-child(2)::before {
   animation-delay: 0.7s;
 }
 
-.desc-title_2 li:nth-child(3)::before {
+.desc-title2 li:nth-child(3)::before {
   animation-delay: 0.8s;
 }
 
-
-@keyframes display {
-  0% {
-    width: 100%;
-  }
-  100% {
-    width: 0;
-  }
-}
-
-/* .desc-title_2 li::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  animation: showRight 1s ease forwards;
-} */
-
-.title_2 {
+.title2 {
   font-size: 24px;
   line-height: 34px;
   color: #004EAB;
   font-weight: 700;
-  position: relative;
 }
 
 .box2-text {
@@ -199,22 +166,16 @@
   justify-content: flex-end;
 }
 
-.box-inner_3 {
+.box-inner3 {
   position: relative;
   margin-top: 107px;
-  animation: moveUpDown 1s infinite alternate;
 }
 
-.box-inner_4 {
+.box-inner4 {
   position: relative;
   margin-top: -71px;
   display: flex;
   justify-content: center;
-  animation: moveUpDown 1s infinite alternate;
-}
-
-.box-inner {
-  animation: moveUpDown 1s infinite alternate;
 }
 
 .mt-112 {
@@ -226,59 +187,59 @@
 }
 
 @media screen and (max-width: 1450px) {
-  .text-circle_1 {
+  .text-circle1 {
     top: 20%;
     left: 20%;
   }
 
-  .text-circle_2 {
+  .text-circle2 {
     top: 15%;
     left: 24%;
   }
 
-  .text-circle_3 {
+  .text-circle3 {
     top: 19%;
     left: 33%;
   }
 
 
 
-  .text-circle_5 {
+  .text-circle5 {
     top: 19%;
     left: 30%;
   }
 }
 
 @media screen and (max-width: 1200px) {
-  .text-circle_1 {
+  .text-circle1 {
     top: 17%;
     left: 16%;
   }
 
-  .text-circle_2 {
+  .text-circle2 {
     top: 12%;
     left: 22%;
   }
 
-  .text-circle_3 {
+  .text-circle3 {
     top: 16%;
     left: 33%;
   }
 
 
-  .text-circle_4 {
+  .text-circle4 {
     top: 23%;
     left: 35%;
   }
 
-  .text-circle_5 {
+  .text-circle5 {
     top: 16%;
     left: 30%;
   }
 }
 
 @media screen and (max-width:1023px) {
-  .text-title_2 {
+  .text-title2 {
     margin-top: 24%;
   }
 }
@@ -288,7 +249,7 @@
     padding: 0 8px !important;
   }
 
-  .box {
+  .box1 {
     flex-direction: column;
   }
 
@@ -296,7 +257,7 @@
     margin-top: 0;
   }
 
-  .box .col-12 {
+  .box1 .col-12 {
     max-width: unset;
     width: 100%;
     flex: 0 0 auto;
@@ -306,62 +267,67 @@
 
     max-width: unset;
     width: 100%;
-  }
-
-  .title_1,
-  .title_2 {
     text-align: center;
   }
 
-  .text-title_2 {
-    margin: 0 5%;
+  .text-title2 {
+    margin-top: 0;
+    text-align: center;
   }
 
-  .box-inner_2 {
+  .box-inner2 {
     margin: 7.5% 0;
     display: flex;
     justify-content: flex-end;
   }
 
-  .box-inner_3 {
+  .box-inner3 {
     margin: 7.5% 0;
     display: flex;
     justify-content: flex-start;
   }
 
-  .box-inner_4 {
+  .box-inner4 {
     margin: 0;
 
   }
 
-
-  .text-circle_1 {
-    top: 15%;
-    left: 16%;
-  }
-
-  .text-circle_2 {
+  .text-circle2 {
     top: 10%;
     left: 38%;
   }
 
-  .text-circle_3 {
+  .text-circle3 {
     top: 10%;
     left: 30%;
   }
 
-  .text-circle_4 {
-    top: 15%;
-    left: 33%;
-  }
-
-  .text-circle_5 {
+  .text-circle5 {
     top: 9%;
     left: 26%;
   }
 
+  .text-circle4 {
+    top: 15%;
+    left: 33%;
+  }
 
+  .text-circle1 {
+    top: 15%;
+    left: 16%;
+  }
+
+  .desc-title2 {
+    margin-left: 7%;
+    margin-right: 7%;
+    text-align: left;
+  }
 }
+
+.box-inner, .box-inner2, .box-inner3, .box-inner4 {
+  animation: moveUpDown 1s infinite alternate;
+}
+
 
 @keyframes moveUpDown {
   0% {
@@ -377,5 +343,14 @@
 @keyframes showRight {
   100% {
     width: 0
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
