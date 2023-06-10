@@ -51,7 +51,8 @@ body {
   animation-delay: .4s;
 }
 .circle2 {
-  width: 85%;
+  width: 246px;
+  height: 246px;
 }
 
 .box1-circle .box-inner {
@@ -59,9 +60,9 @@ body {
 }
 
 .text-circle {
-  color: #FFFFFF;
-  font-size: clamp(32px, 4.3vw, 48px);
-  line-height: clamp(44px, 5.1vw, 56px);
+  fill: #FFFFFF;
+  font-size: clamp(42px, 4.3vw, 48px);
+  line-height: clamp(48px, 5.1vw, 56px);
   position: absolute;
 
   font-weight: 700;
@@ -169,6 +170,11 @@ body {
 .box-inner3 {
   position: relative;
   margin-top: 107px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+  margin-right: 96px;
 }
 
 .box-inner4 {

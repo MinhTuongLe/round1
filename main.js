@@ -7,6 +7,16 @@ document.querySelectorAll(".increase-number").forEach(function (element) {
 
   var increment = (targetValue / duration) * (1000 / steps);
 
+  var content = element.textContent.trim();
+  var lastCharacter = "";
+
+  for (let i in content) {
+    if (isNaN(content[i])) {
+      lastCharacter+=content.slice(i, content.length);
+      break;
+    }
+  }
+
   var animation = setInterval(function () {
     counter += increment;
     if (counter >= targetValue) {
@@ -14,9 +24,14 @@ document.querySelectorAll(".increase-number").forEach(function (element) {
       clearInterval(animation);
     }
 
-    element.textContent = Math.round(counter);
+    var displayValue = Math.round(counter);
+
+    displayValue += lastCharacter;
+    element.textContent = displayValue;
   }, duration / steps);
 });
+
+
 
 // Rotate circle border
 anime({
