@@ -18,3 +18,7 @@ anime({
   easing: "easeOutCubic",
   loop: true,
 });
+
+
+const listItems = document.querySelectorAll('.desc-title_2 li');
+ console.log(listItems)

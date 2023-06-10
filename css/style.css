@@ -14,17 +14,39 @@
 }
 
 .text-title {
+  position: relative;
   max-width: 500px;
   height: max-content;
   margin: auto 0;
 }
 
 .title_1 {
+  position: relative;
   font-size: clamp(32px, 4.3vw, 48px);
   line-height: clamp(44px, 5.1vw, 56px);
   font-weight: 700;
 
   color: #353455;
+}
+
+.title_1::before,
+.title_2::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  animation: showRight 1s ease forwards;
+}
+
+.title_1::before {
+  animation-delay: .2s;
+}
+
+.title_2::before {
+  animation-delay: .4s;
 }
 
 .circle {
@@ -54,7 +76,10 @@
 
 .box-inner_2 {
   margin-top: 121px;
+  animation: moveUpDown 1s infinite alternate;
 }
+
+
 
 .text-circle_1 {
   top: 25%;
@@ -86,28 +111,87 @@
   align-items: center;
 }
 
-.dec-title_2 {
+.desc-title_2 {
+  position: relative;
   margin-top: 24px;
   padding-left: 20px;
 }
 
-.dec-title_2 li::marker {
+.desc-title_2 li::marker {
   color: #EB4969;
   width: 7px;
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
 }
 
-.dec-title_2 li {
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.desc-title_2 li {
   font-size: 16px;
   color: #353455;
   line-height: 26px;
   margin-bottom: 20px;
+  position: relative;
 }
+
+.desc-title_2 li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  animation: showRight 1s ease forwards;
+}
+
+.desc-title_2 li:nth-child(1)::before {
+  animation-delay: 0.6s;
+}
+
+.desc-title_2 li:nth-child(2)::before {
+  animation-delay: 0.7s;
+}
+
+.desc-title_2 li:nth-child(3)::before {
+  animation-delay: 0.8s;
+}
+
+
+@keyframes display {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0;
+  }
+}
+
+/* .desc-title_2 li::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  animation: showRight 1s ease forwards;
+} */
 
 .title_2 {
   font-size: 24px;
   line-height: 34px;
   color: #004EAB;
   font-weight: 700;
+  position: relative;
 }
 
 .box2-text {
@@ -118,6 +202,7 @@
 .box-inner_3 {
   position: relative;
   margin-top: 107px;
+  animation: moveUpDown 1s infinite alternate;
 }
 
 .box-inner_4 {
@@ -125,6 +210,11 @@
   margin-top: -71px;
   display: flex;
   justify-content: center;
+  animation: moveUpDown 1s infinite alternate;
+}
+
+.box-inner {
+  animation: moveUpDown 1s infinite alternate;
 }
 
 .mt-112 {
@@ -271,4 +361,21 @@
   }
 
 
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(-20px);
+  }
+}
+
+
+@keyframes showRight {
+  100% {
+    width: 0
+  }
 }
